@@ -4,7 +4,7 @@ import Layout from "./layout.11ty"
 import Sidebar from "./_includes/components/sidebar"
 import Header from "./_includes/components/header"
 
-const Index = ({title}) => {
+const Dashboard = ({title}) => {
   return (
     <Layout>
       <Header />
@@ -16,7 +16,7 @@ const Index = ({title}) => {
   )
 }
 
-export default Index
+export default Dashboard
 export const data = {
-  title: "ACS - Entersoft",
+  title: "ACS - Entersoft - Dashboard",
 }

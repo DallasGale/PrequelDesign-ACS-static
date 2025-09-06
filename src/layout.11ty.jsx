@@ -1,5 +1,5 @@
 import React from "react"
-
+import Header from "./_includes/components/header"
 export default function Layout({children}) {
   return (
     <html lang="en">
@@ -18,8 +18,7 @@ export default function Layout({children}) {
         />
       </head>
       <body>
-        {/* <Header /> */}
-        <main>{children}</main>
+        {children}
         <script src="/js/app.js"></script>
       </body>
     </html>
