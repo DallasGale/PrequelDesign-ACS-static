@@ -1,0 +1,132 @@
+@import "./header.css";
+@import "./sidebar.css";
+@import "./app.css";
+:root {
+  --font-family: "Roboto", sans-serif;
+  --ff-extra-light: 100;
+  --ff-light: 200;
+  --ff-regular: 300;
+  --ff-semi: 400;
+  --ff-bold: 500;
+  --ff-extra-bold: 600;
+
+  /* Colors */
+  --color-navy: #001b73;
+  --color-dark-navy: #00053d;
+  --color-pink: #ec407a;
+  --color-white: #ffffff;
+  --color-grey: #8c8c8c;
+  --color-black: #000000;
+
+  --color-trans-white: rgba(255, 255, 255, 0.05);
+
+  /* --color-light-grey: #c7c7c7;
+  --color-grey: #8c8c8c;
+  --color-black: #000000;
+  --color-med-grey: #3c3c3c;
+  --color-dark-grey: #1b1b1b;
+  --color-white: #ffffff;
+
+  --button-primary-bg: rgba(255, 255, 255, 0.1);
+  --button-primary-border: rgba(255, 255, 255, 1);
+
+  --button-secondary-height: 42px;
+
+  --button-text-active-background: rgba(255, 255, 255, 1);
+  --button-text-hover-background: rgba(0, 0, 0, 1);
+  --button-text-active-color: #000000;
+  --button-text-hover-color: #ffffff; */
+
+  --background: var(--color-navy);
+  --foreground: #ffffff;
+  --text-color: #7c7c7c;
+  --text-color-highlight: hsl(0, 0%, 100%);
+  --footer-background: rgba(27, 27, 27, 1);
+  /* --panel-background: rgba(27, 27, 27, 0.4);
+  --panel-border: rgba(255, 255, 255, 1); */
+
+  /* --overlay-background: rgba(0, 0, 0, 0.9); */
+
+  /* Paddings */
+  --site-padding: 20px;
+
+  /* Radius */
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-7: 7px;
+  --radius-10: 10px;
+
+  /* Spacings */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-14: 14px;
+  --space-16: 16px;
+  --space-18: 18px;
+  --space-20: 20px;
+  --space-24: 26px;
+  --space-26: 26px;
+  --space-30: 30px;
+  --space-36: 36px;
+  --space-40: 40px;
+  --space-60: 60px;
+  --space-80: 80px;
+  --space-88: 88px;
+  --space-100: 100px;
+  --space-112: 112px;
+  --space-142: 142px;
+  --space-180: 180px;
+  --space-196: 196px;
+  --space-200: 200px;
+  --space-232: 232px;
+  --space-246: 246px;
+  --space-390: 390px;
+  --space-600: 600px;
+  --space-800: 800px;
+
+  --header-height: var(--space-100);
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+main {
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding-left: 0;
+}
+
+.page-content {
+  padding-top: calc(var(--header-height) * 2);
+  max-width: 1600px;
+  margin-inline: auto;
+}

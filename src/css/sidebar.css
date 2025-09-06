@@ -1,0 +1,23 @@
+.sidebar {
+  background-color: var(--color-trans-white);
+  padding: var(--space-20);
+  border-radius: var(--radius-10);
+  max-width: var(--space-246);
+}
+
+.sidebar__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-20);
+}
+
+.sidebar__list-item {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sidebar__list-item-icon {
+  width: var(--space-20);
+  height: var(--space-20);
+}
