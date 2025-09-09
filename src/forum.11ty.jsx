@@ -1,22 +1,57 @@
 import React from "react"
 
 import Layout from "./layout.11ty"
-import Sidebar from "./_includes/components/sidebar"
-import Header from "./_includes/components/header"
+import CourseList from "./_includes/components/courseList/index.11ty"
 
 const Forum = ({title}) => {
   return (
     <Layout>
-      <Header />
-      <main className="page-content">
-        <Sidebar />
-        <h1>{title}</h1>
-      </main>
+      <h1 className="display1">{title}</h1>
+
+      <CourseList
+        courses={[
+          {
+            id: 0,
+            name: "Cyber security micro-credential for educators",
+            category: "Cyber security",
+            replies: 0,
+            views: 12,
+          },
+          {
+            id: 1,
+            name: "Cyber security micro-credential for educators",
+            category: "Cyber security",
+            replies: 0,
+            views: 8,
+          },
+          {
+            id: 2,
+            name: "Cyber security micro-credential for educators",
+            category: "Cyber security",
+            replies: 0,
+            views: 17,
+          },
+          {
+            id: 3,
+            name: "Cyber security micro-credential for educators",
+            category: "Cyber security",
+            replies: 4,
+            views: 0,
+          },
+          {
+            id: 4,
+            name: "Cyber security micro-credential for educators",
+            category: "Cyber security",
+            replies: 32,
+            views: 0,
+          },
+        ]}
+      />
     </Layout>
   )
 }
 
 export default Forum
 export const data = {
-  title: "ACS - Entersoft - Forum",
+  title: "Available Forums",
 }
