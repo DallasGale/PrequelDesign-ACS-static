@@ -1,7 +1,11 @@
 import React from "react"
 
 const PrimaryButton = ({label}) => {
-  return <button className="btn primary-btn">{label}</button>
+  return (
+    <div>
+      <button className="btn cta-btn primary-btn">{label}</button>
+    </div>
+  )
 }
 
 export default PrimaryButton

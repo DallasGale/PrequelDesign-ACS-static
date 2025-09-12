@@ -1,14 +1,12 @@
 "use strict"
+$(document).ready(function () {
+  console.log("hi")
 
-console.log("hi")
-
-// Active Menu
-$(function ($) {
+  // Active Menu
   let path = window.location.href
   $(".sidebar a").each(function () {
     let current_url = this.href
 
-    console.log({current_url, path})
     if (current_url === path) {
       console.log("this", this)
       $(this).addClass("sidebar__list-item-link--active")

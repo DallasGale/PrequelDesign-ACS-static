@@ -10,8 +10,8 @@ const CalendarView = ({title}) => {
     </Layout>
   )
 }
-
-export default CalendarView
 export const data = {
   title: "Calendar",
 }
+
+export default CalendarView

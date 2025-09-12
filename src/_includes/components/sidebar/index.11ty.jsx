@@ -3,7 +3,7 @@ import React from "react"
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <ul className="sidebar__list">
+      <ul className="sidebar__list card-bg">
         {navItems.map((item, _index) => {
           return (
             <li key={_index}>
