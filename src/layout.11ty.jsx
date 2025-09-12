@@ -4,7 +4,7 @@ import BaseLayout from "./baseLayout.11ty"
 
 export default function Layout({children}) {
   return (
-    <BaseLayout>
+    <BaseLayout menu={true}>
       <Sidebar />
       <section className="page-content">{children}</section>
     </BaseLayout>

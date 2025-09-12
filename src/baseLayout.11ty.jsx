@@ -2,7 +2,7 @@ import React from "react"
 import Header from "./_includes/components/header/index.11ty"
 import Footer from "./_includes/components/footer/index.11ty"
 
-export default function BaseLayout({children}) {
+export default function BaseLayout({children, menu}) {
   return (
     <html lang="en">
       <head>
@@ -46,7 +46,7 @@ https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js
         ></script>
       </head>
       <body>
-        <Header />
+        <Header menu={menu} />
         <main className="page-wrapper">{children}</main>
         <Footer />
         <script type="module" src="/js/app.js"></script>
@@ -59,5 +59,6 @@ https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js
 }
 
 export const data = {
+  menu: false,
   children: React.ReactNode,
 }
