@@ -6,7 +6,7 @@ export default function BaseLayout({children}) {
   return (
     <html lang="en">
       <head>
-        <title>My Site</title>
+        <title>ACS - Entersoft</title>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
           rel="stylesheet"

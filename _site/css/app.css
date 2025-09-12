@@ -13,7 +13,10 @@
   /* Colors */
   --color-navy: #001b73;
   --color-mint: #7fea8a;
+  --color-mint-hover: #b3f3b9;
+  --color-nav-item-inactive: #ffffff63;
   --color-cyan: #21c3b5;
+  --color-cyan-hover: #b1d9f8;
   --color-dark-mint: #043809;
   --color-blue: #0065cc;
   --color-dark-navy: #00053d;
@@ -361,11 +364,11 @@ ol {
 .primary-btn {
   background-color: var(--color-mint);
   padding: var(--space-10) var(--space-30);
-  color: var(--color-black);
+  color: var(--color-dark-navy);
 }
 .primary-btn:hover {
-  background-color: var(--color-dark-navy);
-  color: var(--color-white);
+  background-color: var(--color-mint-hover);
+  color: var(--color-dark-navy);
 }
 
 /* ------------------------------------------------- */
@@ -374,11 +377,11 @@ ol {
 .secondary-btn {
   background-color: var(--color-cyan);
   padding: var(--space-10) var(--space-40);
-  color: var(--color-black);
+  color: var(--color-dark-navy);
 }
 .secondary-btn:hover {
-  background-color: var(--color-dark-navy);
-  color: var(--color-white);
+  background-color: var(--color-cyan-hover);
+  color: var(--color-dark-navy);
 }
 
 /* ------------------------------------------------- */
@@ -563,7 +566,7 @@ ol {
   gap: var(--space-26);
 }
 .nav-tabs .nav-link {
-  color: var(--color-grey);
+  color: var(--color-nav-item-inactive);
   font-weight: 600;
   padding-left: 0;
   padding-right: 0;
@@ -601,7 +604,7 @@ ol {
 /* Typography */
 /* ------------------------------------------------- */
 .display1 {
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .display2 {
@@ -656,7 +659,7 @@ ol {
 @media only screen and (min-width: 992px) {
   /* Typography */
   .display1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .display2 {
