@@ -6,6 +6,12 @@ export default function BaseLayout({children, menu}) {
   return (
     <html lang="en">
       <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <title>ACS - Entersoft</title>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -53,6 +59,7 @@ https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js
         <script type="module" src="/js/settings.js"></script>
         <script type="module" src="/js/common.js"></script>
         <script type="module" src="/js/profilePhoto.js"></script>
+        <script type="module" src="/js/mobileMenu.js"></script>
       </body>
     </html>
   )

@@ -11,23 +11,23 @@ const StudentDashboard = ({title}) => {
       <div className="card-grid">
         <Card
           heading="Cyber security micro-credential for educators"
-          image="/assets/images/CourseTile_ACS.png"
+          image="/assets/images/course-title-acs.png"
         />
         <Card
           heading="Cyber security micro-credential for educators"
-          image="https://placehold.co/400x450/001b73/FFF?text=400x450&font=roboto"
+          image="/assets/images/course-title-acs.png"
         />
         <Card
           heading="Cyber security micro-credential for educators"
-          image="https://placehold.co/400x450/001b73/FFF?text=400x450&font=roboto"
+          image="/assets/images/course-title-acs.png"
         />
         <Card
           heading="Cyber security micro-credential for educators"
-          image="https://placehold.co/400x450/001b73/FFF?text=400x450&font=roboto"
+          image="/assets/images/course-title-acs.png"
         />
         <Card
           heading="Cyber security micro-credential for educators"
-          image="https://placehold.co/400x450/001b73/FFF?text=400x450&font=roboto"
+          image="/assets/images/course-title-acs.png"
         />
       </div>
     </Layout>

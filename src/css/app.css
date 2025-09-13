@@ -16,7 +16,7 @@
   --color-mint-hover: #b3f3b9;
   --color-nav-item-inactive: #ffffff63;
   --color-cyan: #21c3b5;
-  --color-cyan-hover: #b1d9f8;
+  --color-cyan-hover: #1ad2c3;
   --color-dark-mint: #043809;
   --color-blue: #0065cc;
   --color-dark-navy: #00053d;
@@ -86,6 +86,7 @@
   --space-80: 80px;
   --space-88: 88px;
   --space-100: 100px;
+  --space-120: 120px;
   --space-112: 112px;
   --space-142: 142px;
   --space-180: 180px;
@@ -97,8 +98,8 @@
   --space-600: 600px;
   --space-800: 800px;
 
-  --header-height: 117px;
-  --footer-height: 135px;
+  --header-height: 65px;
+  --footer-height: 100px;
 }
 
 html,
@@ -140,8 +141,8 @@ ol {
 .page-wrapper {
   padding: var(--space-10);
   align-items: flex-start;
-  padding-top: calc(var(--header-height) * 2);
-  padding-bottom: var(--space-100);
+  padding-top: calc(var(--header-height) * 1.5);
+  padding-bottom: var(--space-40);
   max-width: 1310px;
   margin-inline: auto;
   gap: var(--space-142);
@@ -180,13 +181,21 @@ ol {
 }
 
 .header__img {
-  width: var(--space-60);
-  height: var(--space-60);
+  width: var(--space-40);
+  height: var(--space-40);
+  position: relative;
+  z-index: 2;
+}
+
+.header__menu-wrapper {
+  position: relative;
 }
 
 .header__menu {
-  width: var(--space-60);
-  height: var(--space-60);
+  z-index: 2;
+  position: relative;
+  width: var(--space-40);
+  height: var(--space-40);
   border-radius: 100%;
   border: none;
   background-color: var(--color-pink);
@@ -308,7 +317,7 @@ ol {
 /* Cards */
 /* ------------------------------------------------- */
 .card {
-  background-color: var(--color-white);
+  background-color: var(--color-trans-white);
   border-radius: var(--radius-10);
   padding: var(--space-20);
   width: 100%;
@@ -320,8 +329,6 @@ ol {
 
 .card__img-wrapper {
   width: 100%;
-  padding: var(--space-40);
-  /* max-width: 400px; */
 }
 .card__image img {
   width: 100%;
@@ -349,38 +356,52 @@ ol {
   font-weight: 800;
   font-size: 18px;
   transform: translateY(0);
-  transition: all 0.25s ease-in-out;
-  /* border: 2px solid transparent; */
+  transition: all 0.15s ease-in-out;
 }
 
 .cta-btn:hover {
   transition: all 0.25s ease-in-out;
-  transform: translateY(-2px);
-  /* border-color: var(--color-white); */
+  transform: translateY(-1px);
 }
 
+/* ------------------------------------------------- */
+/*  Button */
+/* ------------------------------------------------- */
+.mobile-nav {
+  display: none;
+  visibility: visible;
+  width: 100%;
+  visibility: visible;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: var(--color-dark-navy);
+  z-index: 1;
+  align-items: center;
+  justify-self: center;
+}
+.mobile-nav.visible {
+  display: flex;
+}
+.mobile-nav .sidebar {
+  background-color: transparent;
+  display: block;
+  max-width: 100%;
+}
+.mobile-nav .sidebar .sidebar__list {
+  background-color: transparent !important;
+}
 /* ------------------------------------------------- */
 /* Primary Button */
 /* ------------------------------------------------- */
 .primary-btn {
-  background-color: var(--color-mint);
-  padding: var(--space-10) var(--space-30);
-  color: var(--color-dark-navy);
-}
-.primary-btn:hover {
-  background-color: var(--color-mint-hover);
-  color: var(--color-dark-navy);
-}
-
-/* ------------------------------------------------- */
-/* Secondary Button */
-/* ------------------------------------------------- */
-.secondary-btn {
   background-color: var(--color-cyan);
   padding: var(--space-10) var(--space-40);
   color: var(--color-dark-navy);
 }
-.secondary-btn:hover {
+.primary-btn:hover {
   background-color: var(--color-cyan-hover);
   color: var(--color-dark-navy);
 }
@@ -391,11 +412,17 @@ ol {
 .primary-link {
   cursor: pointer;
   font-size: 14px;
-  font-weight: 900;
-  color: var(--color-blue);
+  font-weight: 600;
+  color: var(--color-white);
   text-decoration: underline;
-  text-decoration-thickness: var(--space-2);
+  text-decoration-thickness: 1px;
   text-underline-offset: var(--space-4);
+  transition: 0.15s ease-in-out all;
+}
+
+.primary-link:hover {
+  color: var(--color-cyan);
+  transition: 0.25s ease-in-out all;
 }
 
 /* ------------------------------------------------- */
@@ -468,6 +495,7 @@ ol {
 .text-input__field,
 .select-input,
 .textarea-input__field {
+  background-color: var(--color-white);
   padding: var(--space-10);
   border-radius: var(--radius-6);
 }
@@ -477,7 +505,6 @@ ol {
 .form-fields {
   display: flex;
   flex-direction: column;
-  /* gap: var(--space-40); */
 }
 
 .form-cta {
@@ -520,6 +547,10 @@ ol {
   display: flex;
   align-items: center;
   gap: var(--space-10);
+}
+
+.form__equity-group-wrapper {
+  color: var(--color-dark-navy);
 }
 
 /* ------------------------------------------------- */
@@ -631,6 +662,10 @@ ol {
   color: var(--color-cyan);
 }
 
+.text-white {
+  color: var(--color-white);
+}
+
 /* ------------------------------------------------- */
 /* Breakpoints Small */
 /* ------------------------------------------------- */
@@ -658,6 +693,19 @@ ol {
 /* Breakpoints Large */
 /* ------------------------------------------------- */
 @media only screen and (min-width: 992px) {
+  :root {
+    --header-height: 117px;
+    --footer-height: 135px;
+  }
+  .header__menu,
+  .header__img {
+    width: var(--space-60);
+    height: var(--space-60);
+  }
+  .mobile-nav {
+    visibility: hidden;
+    display: none;
+  }
   /* Typography */
   .display1 {
     font-size: 40px;
@@ -678,7 +726,7 @@ ol {
     font-weight: 800;
   }
   .card-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .card__img-wrapper {
@@ -686,6 +734,9 @@ ol {
   }
   .page-wrapper {
     flex-direction: row;
+
+    padding-top: calc(var(--header-height) * 2);
+    padding-bottom: var(--space-100);
   }
   .sidebar {
     display: block;
@@ -693,9 +744,9 @@ ol {
 }
 
 /* Breakpoints Extra Large */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
   .card-grid {
     gap: var(--space-40);
-    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

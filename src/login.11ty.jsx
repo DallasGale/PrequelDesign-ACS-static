@@ -2,7 +2,7 @@ import React from "react"
 
 import BaseLayout from "./baseLayout.11ty"
 import TextInput from "./_includes/components/textInput/index.11ty"
-import SecondaryButton from "./_includes/components/secondaryButton/index.11ty"
+import PrimaryButton from "./_includes/components/primaryButton/index.11ty"
 
 const Index = ({title}) => {
   return (
@@ -69,13 +69,7 @@ const Index = ({title}) => {
             </a>
           </div>
           <div className="acs-button-wrapper">
-            <SecondaryButton type="submit" label="Login" />
-            {/* <button
-              type="submit"
-              className="acs-button-primary btn-login theme_btn text-center w-100"
-            >
-              Login
-            </button> */}
+            <PrimaryButton type="submit" label="Login" />
           </div>
         </form>
       </div>

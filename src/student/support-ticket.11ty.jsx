@@ -31,7 +31,7 @@ const SupportTicket = ({title}) => {
               </div>
             </div>
 
-            <SecondaryButton type="submit" label="Search" />
+            <PrimaryButton type="submit" label="Search" />
           </form>
         </div>
       </div>

@@ -4,6 +4,7 @@ import SecondaryButton from "../secondaryButton/index.11ty"
 import SelectInput from "../selectInput/index.11ty"
 import CheckGroup from "../checkGroup/index.11ty"
 import CheckInput from "../checkInput/index.11ty"
+import PrimaryButton from "../primaryButton/index.11ty"
 
 const RegisterForm = ({title}) => {
   return (
@@ -66,7 +67,7 @@ const RegisterForm = ({title}) => {
           </div>
 
           <div className="col-12 mb-3">
-            <div className="card-bg">
+            <div className="text-input__field form__equity-group-wrapper">
               <CheckGroup label="Equity Group">
                 <CheckInput
                   id="Indigenous"
@@ -107,7 +108,7 @@ const RegisterForm = ({title}) => {
           </div>
         </div>
 
-        <SecondaryButton type="submit" label="Register" />
+        <PrimaryButton type="submit" label="Register" />
       </form>
 
       <small className="label2">
