@@ -8,7 +8,7 @@ const StudentDashboard = ({title}) => {
     <Layout>
       <h1 className="display1">{title}</h1>
 
-      <div className="card-grid">
+      <div className="card-grid pt-5">
         <Card
           heading="Cyber security micro-credential for educators"
           image="/assets/images/course-title-acs.png"
