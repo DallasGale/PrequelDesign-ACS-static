@@ -23,7 +23,12 @@ const CourseList = ({courses}) => {
             return (
               <tr key={course.id} className="forum-table__row">
                 <td width="50%">
-                  <div className="display2">{course.name}</div>
+                  <a
+                    href="/student-dashboard"
+                    className="display2 primary-link"
+                  >
+                    {course.name}
+                  </a>
                 </td>
                 <td>
                   <div className="label2">{course.category}</div>

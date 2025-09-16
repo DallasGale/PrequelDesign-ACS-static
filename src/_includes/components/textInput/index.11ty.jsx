@@ -1,6 +1,6 @@
 import React from "react"
 
-const TextInput = ({label, id, htmlFor, type, placeholder}) => {
+const TextInput = ({label, id, htmlFor, type, placeholder, search}) => {
   return (
     <>
       {label && (
@@ -9,9 +9,12 @@ const TextInput = ({label, id, htmlFor, type, placeholder}) => {
           <strong class="text-danger">*</strong>
         </label>
       )}
+
       <input
         required
-        class="form-control text-input__field"
+        class={`form-control text-input__field ${
+          search ? "text-input__search" : ""
+        }`}
         name={id}
         value=""
         id={id}
@@ -28,6 +31,7 @@ export const data = {
   type: "text",
   htmlFor: "",
   placeholder: "",
+  search: false,
 }
 
 export default TextInput

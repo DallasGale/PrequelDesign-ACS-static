@@ -2,12 +2,30 @@ import React from "react"
 
 import Layout from "./layout.11ty"
 import CourseList from "./_includes/components/courseList/index.11ty"
+import SelectInput from "./_includes/components/selectInput/index.11ty"
+import TextInput from "./_includes/components/textInput/index.11ty"
+import SecondaryButton from "./_includes/components/secondaryButton/index.11ty"
 
 const Forum = ({title}) => {
   return (
     <Layout>
       <h1 className="display1">{title}</h1>
 
+      <div className="row mt-5">
+        <div className="col-6">
+          <SelectInput label="Courses" placeholder="Select Course" />
+        </div>
+        <div className="col-6 d-flex justify-content-end align-items-end">
+          <div className="btn-group">
+            <SecondaryButton label="Latest" />
+            <SecondaryButton label="Unread" />
+            <SecondaryButton label="Most Viewed" />
+          </div>
+        </div>
+        <div className="col-12 mt-3 mb-3">
+          <TextInput label="Search" search={true} />
+        </div>
+      </div>
       <CourseList
         courses={[
           {

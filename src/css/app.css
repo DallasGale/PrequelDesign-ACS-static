@@ -173,6 +173,10 @@ ol {
   padding: var(--space-30);
 }
 
+.btn-group {
+  gap: var(--space-10);
+}
+
 /* ------------------------------------------------- */
 /* Header */
 /* ------------------------------------------------- */
@@ -452,6 +456,21 @@ ol {
 }
 
 /* ------------------------------------------------- */
+/* Secondary Button */
+/* ------------------------------------------------- */
+.secondary-btn {
+  background-color: var(--color-cyan);
+  padding: var(--space-10) var(--space-40);
+  color: var(--color-dark-navy);
+  font-size: 15px;
+  padding: 8px 15px;
+}
+.secondary-btn:hover {
+  background-color: var(--color-cyan-hover);
+  color: var(--color-dark-navy);
+}
+
+/* ------------------------------------------------- */
 /* Primary Link */
 /* ------------------------------------------------- */
 .primary-link {
@@ -543,6 +562,15 @@ ol {
   background-color: var(--color-white);
   padding: var(--space-10);
   border-radius: var(--radius-6);
+}
+
+.text-input__search {
+  position: relative;
+  background: #ffffff url("../assets/svgs/search.svg");
+  background-repeat: no-repeat;
+  background-position: center left var(--space-10);
+  background-size: var(--space-20);
+  padding-left: var(--space-40);
 }
 /* ------------------------------------------------- */
 /* Forms */

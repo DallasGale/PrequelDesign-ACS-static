@@ -4,7 +4,7 @@ import PrimaryLink from "../primaryLink/index.11ty"
 
 const Card = ({heading, image}) => {
   return (
-    <div className="card">
+    <a href="/student-dashboard" className="card">
       <picture className="card__img-wrapper">
         <img src={image} width="100%" height="auto" className="card__img" />
       </picture>
@@ -22,7 +22,7 @@ const Card = ({heading, image}) => {
           <PrimaryLink label="Course Overview" />
         </div> */}
       </div>
-    </div>
+    </a>
   )
 }
 

@@ -1,14 +1,14 @@
 import React from "react"
 
-const SelectInput = ({label, id, placeholder}) => {
+const SelectInput = ({label, id, placeholder, required}) => {
   return (
     <div>
       <label className="form-label label2">
         {label}
-        <strong className="text-danger">*</strong>
+        {required && <strong className="text-danger">*</strong>}
       </label>
       <select
-        required
+        required={required}
         id={id}
         class="form-select select-input"
         aria-label={placeholder}
@@ -26,6 +26,7 @@ export const data = {
   label: "",
   id: "",
   placeholder: "",
+  required: false,
 }
 
 export default SelectInput
