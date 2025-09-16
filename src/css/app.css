@@ -99,6 +99,7 @@
   --space-246: 246px;
   --space-286: 286px;
   --space-390: 390px;
+  --space-420: 420px;
   --space-516: 516px;
   --space-600: 600px;
   --space-800: 800px;
@@ -749,8 +750,13 @@ ol {
     height: var(--space-60);
   }
   .mobile-nav {
-    visibility: hidden;
-    display: none;
+    position: absolute;
+    height: auto;
+    top: var(--space-50);
+    right: var(--space-420);
+    width: auto;
+    border-radius: var(--radius-10);
+    box-shadow: -1px 13px 23px 0px rgba(3, 13, 58, 0.35);
   }
   /* Typography */
   .display1 {

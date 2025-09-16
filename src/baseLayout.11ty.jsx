@@ -52,7 +52,7 @@ https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js
         ></script>
       </head>
       <body>
-        <Header menu={menu} />
+        <Header />
         <main className="page-wrapper">{children}</main>
         <Footer />
         <script type="module" src="/js/app.js"></script>
