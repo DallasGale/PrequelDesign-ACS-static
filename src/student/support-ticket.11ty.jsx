@@ -8,11 +8,11 @@ import SecondaryButton from "../_includes/components/secondaryButton/index.11ty"
 const SupportTicket = ({title}) => {
   return (
     <Layout>
-      <div className="support-ticket__header">
-        <h1 className="display1">{title}</h1>
-        <PrimaryButton type="submit" label="Add New" />
-      </div>
       <div className="card-bg generic-page">
+        <div className="support-ticket__header">
+          <h1 className="display1">{title}</h1>
+          <PrimaryButton type="submit" label="Add New" />
+        </div>
         <div className="generic-page__content">
           <form
             action="{{route('users.basic_info.update')}}"

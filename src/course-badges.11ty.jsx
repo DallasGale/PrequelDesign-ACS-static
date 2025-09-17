@@ -5,8 +5,8 @@ import Card from "./_includes/components/card/index.11ty"
 const CourseBadges = ({title}) => {
   return (
     <Layout>
-      <h1 className="display1">{title}</h1>
       <div className="card-bg generic-page">
+        <h1 className="display1">{title}</h1>
         <div className="generic-page__content">
           {/* <p>Please complete a course to earn a certificate.</p> */}
 

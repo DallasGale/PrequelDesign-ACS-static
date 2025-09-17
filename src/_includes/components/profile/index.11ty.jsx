@@ -9,7 +9,7 @@ import Tabs from "../tabs/index.11ty"
 
 const Profile = () => {
   return (
-    <>
+    <div className="profile">
       <Tabs />
       <div className="tab-content">
         <BasicInformation title="Account Details" />
@@ -19,7 +19,7 @@ const Profile = () => {
         <SocialContact title="Social & Contact" />
         <DeleteAccount title="Delete Account" />
       </div>
-    </>
+    </div>
   )
 }
 
