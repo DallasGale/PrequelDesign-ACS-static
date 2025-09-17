@@ -17,10 +17,10 @@ const Card = ({heading, image}) => {
         <div className="card__content-title">
           <h2 className="display2 text-dark-navy">{heading}</h2>
         </div>
-        <div className="card__footer">
+        {/* <div className="card__footer">
           <PrimaryButton label="Enrol" />
           <PrimaryLink label="Course Overview" />
-        </div>
+        </div> */}
       </div>
     </a>
   )
