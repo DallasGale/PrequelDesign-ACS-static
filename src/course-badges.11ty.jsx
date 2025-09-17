@@ -10,7 +10,7 @@ const CourseBadges = ({title}) => {
         <div className="generic-page__content">
           {/* <p>Please complete a course to earn a certificate.</p> */}
 
-          <div className="card-grid">
+          {/* <div className="card-grid">
             <Card
               heading="Cyber security micro-credential for educators"
               image="/assets/images/course-title-acs.png"
@@ -31,7 +31,7 @@ const CourseBadges = ({title}) => {
               heading="Cyber security micro-credential for educators"
               image="/assets/images/course-title-acs.png"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </Layout>
