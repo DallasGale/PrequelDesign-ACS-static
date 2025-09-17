@@ -8,27 +8,29 @@ const StudentDashboard = ({title}) => {
     <Layout>
       <h1 className="display1">{title}</h1>
 
-      <div className="card-grid pt-5">
-        <Card
-          heading="Cyber security micro-credential for educators"
-          image="/assets/images/course-title-acs.png"
-        />
-        <Card
-          heading="Cyber security micro-credential for educators"
-          image="/assets/images/course-title-acs.png"
-        />
-        <Card
-          heading="Cyber security micro-credential for educators"
-          image="/assets/images/course-title-acs.png"
-        />
-        <Card
-          heading="Cyber security micro-credential for educators"
-          image="/assets/images/course-title-acs.png"
-        />
-        <Card
-          heading="Cyber security micro-credential for educators"
-          image="/assets/images/course-title-acs.png"
-        />
+      <div className="card-bg generic-page">
+        <div className="card-grid">
+          <Card
+            heading="Cyber security micro-credential for educators"
+            image="/assets/images/course-title-acs.png"
+          />
+          <Card
+            heading="Cyber security micro-credential for educators"
+            image="/assets/images/course-title-acs.png"
+          />
+          <Card
+            heading="Cyber security micro-credential for educators"
+            image="/assets/images/course-title-acs.png"
+          />
+          <Card
+            heading="Cyber security micro-credential for educators"
+            image="/assets/images/course-title-acs.png"
+          />
+          <Card
+            heading="Cyber security micro-credential for educators"
+            image="/assets/images/course-title-acs.png"
+          />
+        </div>
       </div>
     </Layout>
   )

@@ -1,18 +1,26 @@
 import React from "react"
 
-const TextInput = ({label, id, htmlFor, type, placeholder, search}) => {
+const TextInput = ({
+  label,
+  id,
+  htmlFor,
+  type,
+  placeholder,
+  search,
+  required,
+}) => {
   return (
     <>
       {label && (
         <label class="form-label label2" for={htmlFor}>
           {label}
-          <strong class="text-danger">*</strong>
+          {required && <strong class="text-danger">*</strong>}
         </label>
       )}
 
       <input
-        required
-        class={`form-control text-input__field ${
+        required={required}
+        className={`form-control text-input__field ${
           search ? "text-input__search" : ""
         }`}
         name={id}
@@ -32,6 +40,7 @@ export const data = {
   htmlFor: "",
   placeholder: "",
   search: false,
+  required: false,
 }
 
 export default TextInput

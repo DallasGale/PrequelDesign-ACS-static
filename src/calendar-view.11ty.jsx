@@ -6,7 +6,9 @@ const CalendarView = ({title}) => {
   return (
     <Layout>
       <h1 className="display1">{title}</h1>
-      <div id="calendar" class="calendar"></div>
+      <div className="card-bg generic-page">
+        <div id="calendar" className="calendar"></div>
+      </div>
     </Layout>
   )
 }

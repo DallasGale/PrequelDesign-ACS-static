@@ -293,7 +293,7 @@ ol {
 /* Calendar */
 /* ------------------------------------------------- */
 .calendar {
-  margin-top: var(--space-60);
+  /* margin-top: var(--space-60); */
 }
 /* Overides */
 .fc-theme-standard .fc-scrollgrid {
