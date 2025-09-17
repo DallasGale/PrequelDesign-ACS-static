@@ -24,36 +24,26 @@ const DeleteAccount = ({title}) => {
               <div class="row">
                 <div className="col-12 mb-3">
                   <TextInput
-                    htmlFor="linkedin"
-                    id="linkedin"
-                    label="Share Your LinkedIn Profile Link"
-                    type="string"
-                    placeholder="Linkedin Profile URL"
+                    htmlFor="email"
+                    id="email"
+                    label="Email Address"
+                    type="email"
+                    placeholder="your@email.com"
                   />
                 </div>
                 <div className="col-12 mb-3">
                   <TextInput
                     htmlFor="twitter"
                     id="twitter"
-                    label="Share Your X Profile Link"
-                    type="string"
-                    placeholder="X Profile URL"
-                  />
-                </div>
-
-                <div className="col-12 mb-3">
-                  <TextInput
-                    htmlFor="facebook"
-                    id="facebook"
-                    label="Share Your Facebook Profile Link"
-                    type="string"
-                    placeholder="Facebook Profile URL"
+                    label="Existing Password"
+                    type="password"
+                    placeholder="Type exisiting password"
                   />
                 </div>
               </div>
             </div>
             <div className="form-cta">
-              <PrimaryButton type="submit" label="Save" />
+              <PrimaryButton type="submit" label="Delete Account" />
             </div>
           </form>
         </div>
