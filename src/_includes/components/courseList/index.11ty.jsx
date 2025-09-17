@@ -25,7 +25,7 @@ const CourseList = ({courses}) => {
                 <td width="50%">
                   <a
                     href="/student-dashboard"
-                    className="display2 primary-link"
+                    className="display2 primary-link text-white"
                   >
                     {course.name}
                   </a>

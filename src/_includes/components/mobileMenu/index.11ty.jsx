@@ -4,7 +4,7 @@ import Sidebar from "../sidebar/index.11ty"
 const MobileMenu = () => {
   return (
     <div id="mobile-menu" className="mobile-nav">
-      <Sidebar />
+      <Sidebar isHeaderMenu />
     </div>
   )
 }

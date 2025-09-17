@@ -10,28 +10,20 @@ const CourseBadges = ({title}) => {
         <div className="generic-page__content">
           {/* <p>Please complete a course to earn a certificate.</p> */}
 
-          {/* <div className="card-grid">
-            <Card
-              heading="Cyber security micro-credential for educators"
-              image="/assets/images/course-title-acs.png"
-            />
-            <Card
-              heading="Cyber security micro-credential for educators"
-              image="/assets/images/course-title-acs.png"
-            />
-            <Card
-              heading="Cyber security micro-credential for educators"
-              image="/assets/images/course-title-acs.png"
-            />
-            <Card
-              heading="Cyber security micro-credential for educators"
-              image="/assets/images/course-title-acs.png"
-            />
-            <Card
-              heading="Cyber security micro-credential for educators"
-              image="/assets/images/course-title-acs.png"
-            />
-          </div> */}
+          <div className="badge-grid">
+            <div className="badge-row">
+              <img src="../assets/images/badge.png" alt="" width="100%" />
+            </div>
+            <div className="badge-row">
+              <img src="../assets/images/badge.png" alt="" width="100%" />
+            </div>
+            <div className="badge-row">
+              <img src="../assets/images/badge.png" alt="" width="100%" />
+            </div>
+            <div className="badge-row">
+              <img src="../assets/images/badge.png" alt="" width="100%" />
+            </div>
+          </div>
         </div>
       </div>
     </Layout>

@@ -6,23 +6,38 @@ import CheckGroup from "../checkGroup/index.11ty"
 import CheckInput from "../checkInput/index.11ty"
 import PrimaryButton from "../primaryButton/index.11ty"
 
-const RegisterForm = ({title}) => {
+const RegisterForm = () => {
   return (
     <>
       <form action="" method="POST" enctype="multipart/form-data">
         <div className="row form__register">
           <div className="col-12 col-lg-6 mb-3">
-            <TextInput id="first_name" label="First Name" type="string" />
+            <TextInput
+              id="first_name"
+              label="First Name"
+              type="string"
+              required
+            />
           </div>
           <div className="col-12 col-lg-6 mb-3">
-            <TextInput id="last_name" label="Job Title" type="string" />
+            <TextInput
+              id="last_name"
+              label="Job Title"
+              type="string"
+              required
+            />
           </div>
           <div className="col-12 col-lg-6 mb-3">
-            <TextInput id="email" label="Email" type="email" />
+            <TextInput id="email" label="Email" type="email" required />
           </div>
 
           <div className="col-12 col-lg-6 mb-3">
-            <TextInput id="password" label="Password" type="password" />
+            <TextInput
+              id="password"
+              label="Password"
+              type="password"
+              required
+            />
           </div>
 
           <div className="col-12 col-lg-6 mb-3">
@@ -30,6 +45,7 @@ const RegisterForm = ({title}) => {
               id="birth_year"
               label="Birth Year"
               placeholder="please select"
+              required
             />
           </div>
           <div className="col-12 col-lg-6 mb-3">
@@ -37,6 +53,7 @@ const RegisterForm = ({title}) => {
               id="gender"
               label="Gender"
               placeholder="please select"
+              required
             />
           </div>
 
@@ -45,6 +62,7 @@ const RegisterForm = ({title}) => {
               id="employment"
               label="Employment Status"
               placeholder="please select"
+              required
             />
           </div>
 
@@ -53,7 +71,8 @@ const RegisterForm = ({title}) => {
               id="post_code"
               label="Post Code"
               type="number"
-              name="identity[]"
+              name="post_code"
+              required
             />
           </div>
 
@@ -62,49 +81,45 @@ const RegisterForm = ({title}) => {
               id="school_name"
               label="Name Of School"
               type="text"
-              name="identity[]"
+              name="school_name"
+              required
             />
           </div>
-
+          <div className="col-12 col-md-6 mb-3">
+            <TextInput
+              id="landline"
+              label="Landline Phone"
+              type="landline"
+              name="landline"
+              required
+            />
+          </div>
+          <div className="col-12 col-md-6 mb-3">
+            <TextInput
+              id="mobile"
+              label="Mobile Phone"
+              type="mobile"
+              name="mobile"
+            />
+          </div>
           <div className="col-12 mb-3">
-            <div className="text-input__field form__equity-group-wrapper">
-              <CheckGroup label="Equity Group">
-                <CheckInput
-                  id="Indigenous"
-                  label="Indigenous"
-                  name="identity[]"
-                />
+            <CheckGroup label="Equity Group">
+              <div className="text-input__field form__equity-group-wrapper">
+                <CheckInput id="Indigenous" label="Indigenous" name="equity" />
                 <CheckInput
                   id="cald"
                   label="CALD (Culturally and Linguistically Diverse)"
-                  name="identity[]"
+                  name="equity"
                 />
-                <CheckInput
-                  id="disability"
-                  label="Disability"
-                  name="identity[]"
-                />
+                <CheckInput id="disability" label="Disability" name="equity" />
                 <CheckInput
                   id="prefer"
                   label="Prefer not to say"
-                  name="identity[]"
+                  name="equity"
                 />
-                <CheckInput
-                  id="none"
-                  label="None of the above"
-                  name="identity[]"
-                />
-              </CheckGroup>
-            </div>
-          </div>
-
-          <div className="col-12 mb-3">
-            <TextInput
-              id="phone"
-              label="Phone Number"
-              type="phone"
-              name="identity[]"
-            />
+                <CheckInput id="none" label="None of the above" name="equity" />
+              </div>
+            </CheckGroup>
           </div>
         </div>
 
@@ -120,8 +135,4 @@ const RegisterForm = ({title}) => {
     </>
   )
 }
-export const data = {
-  title: "",
-}
-
 export default RegisterForm

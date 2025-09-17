@@ -1,10 +1,11 @@
 import React from "react"
 import PrimaryButton from "../primaryButton/index.11ty"
 import PrimaryLink from "../primaryLink/index.11ty"
+import PrimaryCardButton from "../primaryCardButton/index.11ty"
 
 const Card = ({heading, image}) => {
   return (
-    <a href="/student-dashboard" className="card">
+    <div href="/student-dashboard" className="card">
       <picture className="card__img-wrapper">
         <img src={image} width="100%" height="auto" className="card__img" />
       </picture>
@@ -15,14 +16,14 @@ const Card = ({heading, image}) => {
           <small className="label3 text-dark-navy">1hr</small>
         </div>
         <div className="card__content-title">
-          <h2 className="display2 text-dark-navy">{heading}</h2>
+          <h2 className="display3 text-dark-navy">{heading}</h2>
         </div>
-        {/* <div className="card__footer">
-          <PrimaryButton label="Enrol" />
+        <div className="card__footer">
+          <PrimaryCardButton label="Enrol" />
           <PrimaryLink label="Course Overview" />
-        </div> */}
+        </div>
       </div>
-    </a>
+    </div>
   )
 }
 

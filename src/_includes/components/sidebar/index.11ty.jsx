@@ -1,6 +1,6 @@
 import React from "react"
 
-const Sidebar = () => {
+const Sidebar = ({isHeaderMenu}) => {
   return (
     <aside className="sidebar">
       <ul className="sidebar__list card-bg">
@@ -18,11 +18,25 @@ const Sidebar = () => {
             </li>
           )
         })}
+        {isHeaderMenu && (
+          <li>
+            <a href="/" className="btn sidebar__list-item-link">
+              {/* <img src={item.icon} className="sidebar__list-item-icon" /> */}
+              <div className="sidebar__list-item-icon">
+                <img src="../../assets/svgs/logout.svg" />
+              </div>
+              Logout
+            </a>
+          </li>
+        )}
       </ul>
     </aside>
   )
 }
 
+export const data = {
+  isHeaderMenu: false,
+}
 export default Sidebar
 
 const navItems = [

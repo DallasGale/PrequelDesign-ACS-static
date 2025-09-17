@@ -65,6 +65,7 @@
   --radius-4: 4px;
   --radius-6: 6px;
   --radius-7: 7px;
+  --radius-8: 8px;
   --radius-10: 10px;
   --radius-14: 14px;
 
@@ -330,7 +331,7 @@ ol {
 /* ------------------------------------------------- */
 .card {
   background-color: var(--color-off-white);
-  border-radius: var(--radius-14);
+  border-radius: var(--radius-8);
   padding: 0;
   overflow: hidden;
   width: 100%;
@@ -339,18 +340,20 @@ ol {
   gap: var(--space-20);
   justify-content: space-between;
   border: none;
+  /* border-bottom: 2px solid var(--color-cyan); */
   transition: var(--out-transition);
+  box-shadow: var(--box-shadow);
 }
 
 .card:hover {
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
   cursor: pointer;
-  transition: var(--in-transition);
-  box-shadow: var(--box-shadow);
+  /* transition: var(--in-transition); */
 }
 .card__img-wrapper {
   width: 100%;
   height: 55%;
+  max-height: 187px;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
@@ -371,12 +374,18 @@ ol {
   flex-wrap: wrap;
   padding: 0 var(--space-20);
 }
-.card__footer,
 .card__content-head {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.card__footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-20);
+  align-items: center;
 }
 
 .card__content-head {
@@ -386,7 +395,7 @@ ol {
 .card__content {
   padding: 0 var(--space-16) var(--space-36);
   height: 45%;
-  min-height: var(--space-230);
+  /* min-height: var(--space-230); */
   display: flex;
   flex-direction: column;
   gap: var(--space-20);
@@ -396,6 +405,22 @@ ol {
   max-width: 70%;
 }
 
+/* ------------------------------------------------- */
+/*  Badges */
+/* ------------------------------------------------- */
+.badge-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-row {
+  display: grid;
+  padding: var(--space-20);
+  grid-template-columns: 150px 1fr;
+  background-color: var(--color-trans-white);
+  border-bottom: 2px solid var(--color-navy);
+  width: 100%;
+}
 /* ------------------------------------------------- */
 /*  Button */
 /* ------------------------------------------------- */
@@ -453,6 +478,20 @@ ol {
   color: var(--color-dark-navy);
 }
 
+.primary-card-btn {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border-radius: 3px;
+  font-size: var(--space-10);
+  width: 100%;
+  border: 2px solid var(--color-blue);
+}
+.primary-card-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-dark-navy);
+  border: 2px solid var(--color-blue);
+}
+
 /* ------------------------------------------------- */
 /* Secondary Button */
 /* ------------------------------------------------- */
@@ -473,18 +512,22 @@ ol {
 /* ------------------------------------------------- */
 .primary-link {
   cursor: pointer;
-  font-size: 14px;
+  font-size: var(--space-12);
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-blue);
+  line-height: 1.1;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: var(--space-4);
+  text-decoration-color: transparent;
   transition: 0.15s ease-in-out all;
+  text-align: right;
 }
 
 .primary-link:hover {
-  color: var(--color-cyan);
+  /* color: var(--color-cyan); */
   transition: 0.25s ease-in-out all;
+  text-decoration-color: var(--color-blue);
 }
 
 /* ------------------------------------------------- */
@@ -560,6 +603,7 @@ ol {
   background-color: var(--color-white);
   padding: var(--space-10);
   border-radius: var(--radius-6);
+  width: 100%;
 }
 
 .text-input__search {
@@ -736,6 +780,10 @@ ol {
   font-size: 13px;
   font-weight: 800;
 }
+.label3 {
+  font-size: 8px;
+  font-weight: 800;
+}
 
 .text-link {
   color: var(--color-cyan);
@@ -750,7 +798,7 @@ ol {
 /* ------------------------------------------------- */
 @media only screen and (min-width: 576px) {
   .card__content {
-    padding: var(--space-20);
+    padding: 0 var(--space-20);
   }
   .card-grid {
     display: grid;
@@ -775,6 +823,12 @@ ol {
   .display2 {
     font-size: 25px;
     font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 /* ------------------------------------------------- */
@@ -813,9 +867,6 @@ ol {
     font-size: 13px;
     font-weight: 800;
   }
-  .card-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 
   .page-wrapper {
     flex-direction: row;
@@ -826,9 +877,9 @@ ol {
   .sidebar {
     display: block;
   }
-  .card__content {
-    padding: var(--space-20) var(--space-30);
-  }
+  /* .card__content {
+    padding: var(--space-20) var(--space-20);
+  } */
 }
 
 /* Breakpoints Extra Large */

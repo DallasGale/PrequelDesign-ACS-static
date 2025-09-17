@@ -1,7 +1,6 @@
 import React from "react"
 import ProfileLayout from "../layout.11ty"
 import TextInput from "../../textInput/index.11ty"
-import SecondaryButton from "../../secondaryButton/index.11ty"
 import PrimaryButton from "../../primaryButton/index.11ty"
 
 const DeleteAccount = ({title}) => {
@@ -15,11 +14,7 @@ const DeleteAccount = ({title}) => {
           />
         </div>
         <div class="col-12 col-xl-6">
-          <form
-            action="{{route('users.basic_info.update')}}"
-            method="POST"
-            enctype="multipart/form-data"
-          >
+          <form action="" method="POST" enctype="multipart/form-data">
             <div className="form-fields form__change-password ">
               <div class="row">
                 <div className="col-12 mb-3">
@@ -29,6 +24,7 @@ const DeleteAccount = ({title}) => {
                     label="Email Address"
                     type="email"
                     placeholder="your@email.com"
+                    required
                   />
                 </div>
                 <div className="col-12 mb-3">
@@ -38,6 +34,7 @@ const DeleteAccount = ({title}) => {
                     label="Existing Password"
                     type="password"
                     placeholder="Type exisiting password"
+                    required
                   />
                 </div>
               </div>
