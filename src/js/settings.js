@@ -11,5 +11,6 @@ tabs.on("show.bs.tab", function (e) {
   localStorage.setItem("activeSettingsTab", $(e.target).attr("href"))
   let id = $(e.target).attr("href")
   let activePanel = $(id)
+  console.log({activePanel})
   activePanel.toggleClass("active")
 })

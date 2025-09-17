@@ -271,7 +271,7 @@ ol {
   transition: none;
 }
 
-.sidebar__list-item-link--active,
+/* .sidebar__list-item-link--active, */
 .sidebar__list-item-link:hover {
   background-color: var(--color-white);
   color: var(--color-dark-navy);
@@ -326,6 +326,20 @@ ol {
   background-color: #091e67;
 }
 
+.accordion-item {
+  background-color: transparent;
+  border-color: var(--color-dark-navy);
+}
+.accordion-button {
+  background-color: var(--color-blue);
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-trans-white);
+  box-shadow: none;
+}
+.accordion-button::after {
+  color: white;
+}
 /* ------------------------------------------------- */
 /* Cards */
 /* ------------------------------------------------- */
@@ -747,7 +761,17 @@ ol {
   transition: all 0.55s ease-in-out;
   opacity: 1;
 }
+/* ------------------------------------------------- */
+/* Course Details */
+/* ------------------------------------------------- */
+.course-details__grid {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+}
 
+.course-details__badge {
+  padding: var(--space-40);
+}
 /* ------------------------------------------------- */
 /* Profile */
 /* ------------------------------------------------- */
@@ -785,6 +809,14 @@ ol {
   font-weight: 800;
 }
 
+.body1 {
+  font-size: 14px;
+}
+
+.ul {
+  padding-left: var(--space-20);
+  margin-top: var(--space-20);
+}
 .text-link {
   color: var(--color-cyan);
 }
@@ -871,7 +903,7 @@ ol {
   .page-wrapper {
     flex-direction: row;
     gap: var(--space-60);
-    padding-top: calc(var(--header-height) * 2);
+    padding-top: calc(var(--header-height) * 1.7);
     padding-bottom: var(--space-100);
   }
   .sidebar {

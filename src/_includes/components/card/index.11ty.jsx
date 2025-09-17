@@ -20,7 +20,10 @@ const Card = ({heading, image}) => {
         </div>
         <div className="card__footer">
           <PrimaryCardButton label="Enrol" />
-          <PrimaryLink label="Course Overview" />
+          <PrimaryLink
+            link="/course-details/cyber-security-micro-credential-for-educators"
+            label="Course Overview"
+          />
         </div>
       </div>
     </div>

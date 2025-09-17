@@ -10,7 +10,40 @@ import Tabs from "../tabs/index.11ty"
 const Profile = () => {
   return (
     <div className="profile">
-      <Tabs />
+      <Tabs
+        tabs={[
+          {
+            id: "#basic_information_tab",
+            label: "Account Details",
+            active: true,
+          },
+          {
+            id: "#change_password_tab",
+            label: "Change Password",
+            active: false,
+          },
+          {
+            id: "#images_tab",
+            label: "Profile Photo",
+            active: false,
+          },
+          {
+            id: "#about_tab",
+            label: "About",
+            active: false,
+          },
+          {
+            id: "#social_tab",
+            label: "Social & Contact",
+            active: false,
+          },
+          {
+            id: "#delete_account_tab",
+            label: "Delete Account",
+            active: false,
+          },
+        ]}
+      />
       <div className="tab-content">
         <BasicInformation title="Account Details" />
         <ChangePassword title="Change Password" />
