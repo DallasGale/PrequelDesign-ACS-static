@@ -22,7 +22,7 @@ const RegisterForm = () => {
           <div className="col-12 col-lg-6 mb-3">
             <TextInput
               id="last_name"
-              label="Job Title"
+              label="Last Name"
               type="string"
               required={true}
             />
