@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "./layout.11ty"
-import Card from "./_includes/components/card/index.11ty"
 import BadgeRow from "./_includes/components/badgeRow/index.11ty"
 
 const CourseBadges = ({title}) => {
@@ -9,8 +8,6 @@ const CourseBadges = ({title}) => {
       <div className="card-bg generic-page">
         <h1 className="display1">{title}</h1>
         <div className="generic-page__content">
-          {/* <p>Please complete a course to earn a certificate.</p> */}
-
           <div className="badge-grid">
             <BadgeRow />
             <BadgeRow />

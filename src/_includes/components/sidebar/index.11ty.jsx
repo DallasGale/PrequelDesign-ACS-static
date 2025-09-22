@@ -7,7 +7,12 @@ const Sidebar = ({isHeaderMenu}) => {
         {navItems.map((item, _index) => {
           return (
             <li key={_index}>
-              <a href={item.link} className="btn sidebar__list-item-link">
+              <a
+                href={item.link}
+                className={`btn sidebar__list-item-link ${
+                  isHeaderMenu ? "no-active-state" : ""
+                }`}
+              >
                 {/* <img src={item.icon} className="sidebar__list-item-icon" /> */}
                 <div
                   className="sidebar__list-item-icon"

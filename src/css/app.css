@@ -271,17 +271,28 @@ ol {
   transition: none;
 }
 
-/* .sidebar__list-item-link--active, */
+.sidebar__list-item-link--active,
 .sidebar__list-item-link:hover {
   background-color: var(--color-white);
   color: var(--color-dark-navy);
-
   transition: none;
-  /* transition: all 0.15s ease-in-out; */
-
   svg {
     filter: invert(1);
-    /* transition: all 0.15s ease-in-out; */
+  }
+}
+
+.sidebar__list-item-link.no-active-state {
+  background-color: transparent !important;
+  color: var(--color-white);
+  svg {
+    filter: invert(0);
+  }
+}
+.sidebar__list-item-link.no-active-state:hover {
+  background-color: var(--color-white) !important;
+  color: var(--color-dark-navy);
+  svg {
+    filter: invert(1);
   }
 }
 
