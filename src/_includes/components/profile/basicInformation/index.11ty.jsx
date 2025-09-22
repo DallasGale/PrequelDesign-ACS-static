@@ -15,6 +15,7 @@ const BasicInformation = ({title}) => {
         <div className="row form-fields">
           <div className="col-12 mb-3">
             <TextInput
+              required={true}
               htmlFor="name"
               id="firstName"
               label="First Name"
@@ -24,6 +25,7 @@ const BasicInformation = ({title}) => {
 
           <div className="col-12 mb-3">
             <TextInput
+              required={true}
               htmlFor="name"
               id="lastName"
               label="Last Name"
@@ -33,6 +35,7 @@ const BasicInformation = ({title}) => {
 
           <div className="col-12 mb-3">
             <SelectInput
+              required={true}
               id="birth"
               label="Birth Year"
               placeholder="Select Birth Year"
@@ -41,6 +44,7 @@ const BasicInformation = ({title}) => {
 
           <div className="col-12 mb-3">
             <SelectInput
+              required={true}
               id="gender"
               label="Gender"
               placeholder="Select Your Gender"
@@ -49,6 +53,7 @@ const BasicInformation = ({title}) => {
 
           <div className="col-12 mb-3">
             <SelectInput
+              required={true}
               id="employment_status"
               label="Employment Status"
               placeholder="Select Employment Status"
@@ -57,6 +62,7 @@ const BasicInformation = ({title}) => {
 
           <div className="col-12 mb-3">
             <TextInput
+              required={true}
               htmlFor="post_code"
               id="post_code"
               label="Post Code"
@@ -66,6 +72,7 @@ const BasicInformation = ({title}) => {
 
           <div className="col-12 mb-3">
             <TextInput
+              required={true}
               htmlFor="school_name"
               id="school_name"
               label="Name of School"
@@ -75,6 +82,7 @@ const BasicInformation = ({title}) => {
 
           <div className="col-12 mb-3">
             <TextInput
+              required={true}
               htmlFor="phone"
               id="phone"
               label="Mobile Number"
@@ -93,6 +101,7 @@ const BasicInformation = ({title}) => {
 
           <div className="col-12 mb-3">
             <TextInput
+              required={true}
               htmlFor="email"
               id="lanphone"
               label="Email"

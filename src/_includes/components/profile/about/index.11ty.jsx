@@ -15,7 +15,12 @@ const About = ({title}) => {
         <div className="form-fields form__change-password ">
           <div className="row">
             <div className="col-12 col-lg-6  mb-3">
-              <TextInput id="job_title" label="Job Title" type="string" />
+              <TextInput
+                id="job_title"
+                label="Job Title"
+                type="string"
+                required={true}
+              />
             </div>
 
             <div className="col-12 col-lg-6 mb-3">

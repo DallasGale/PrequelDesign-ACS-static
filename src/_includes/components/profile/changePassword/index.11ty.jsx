@@ -20,6 +20,7 @@ const ChangePassword = ({title}) => {
                 id="email"
                 label="Email"
                 type="email"
+                required={true}
               />
             </div>
 
@@ -29,6 +30,7 @@ const ChangePassword = ({title}) => {
                 id="current_password"
                 label="Current Password"
                 type="password"
+                required={true}
               />
             </div>
           </div>
@@ -39,6 +41,7 @@ const ChangePassword = ({title}) => {
                 id="new_password"
                 label="New Password"
                 type="password"
+                required={true}
               />
             </div>
 
@@ -48,6 +51,7 @@ const ChangePassword = ({title}) => {
                 id="confirm_password"
                 label="Re-Type Password"
                 type="password"
+                required={true}
               />
             </div>
           </div>

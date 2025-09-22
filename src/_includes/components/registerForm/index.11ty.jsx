@@ -16,7 +16,7 @@ const RegisterForm = () => {
               id="first_name"
               label="First Name"
               type="string"
-              required
+              required={true}
             />
           </div>
           <div className="col-12 col-lg-6 mb-3">
@@ -24,7 +24,7 @@ const RegisterForm = () => {
               id="last_name"
               label="Job Title"
               type="string"
-              required
+              required={true}
             />
           </div>
           <div className="col-12 col-lg-6 mb-3">
@@ -36,7 +36,7 @@ const RegisterForm = () => {
               id="password"
               label="Password"
               type="password"
-              required
+              required={true}
             />
           </div>
 
@@ -45,7 +45,7 @@ const RegisterForm = () => {
               id="birth_year"
               label="Birth Year"
               placeholder="please select"
-              required
+              required={true}
             />
           </div>
           <div className="col-12 col-lg-6 mb-3">
@@ -53,7 +53,7 @@ const RegisterForm = () => {
               id="gender"
               label="Gender"
               placeholder="please select"
-              required
+              required={true}
             />
           </div>
 
@@ -62,7 +62,7 @@ const RegisterForm = () => {
               id="employment"
               label="Employment Status"
               placeholder="please select"
-              required
+              required={true}
             />
           </div>
 
@@ -72,7 +72,7 @@ const RegisterForm = () => {
               label="Post Code"
               type="number"
               name="post_code"
-              required
+              required={true}
             />
           </div>
 
@@ -82,7 +82,7 @@ const RegisterForm = () => {
               label="Name Of School"
               type="text"
               name="school_name"
-              required
+              required={true}
             />
           </div>
           <div className="col-12 col-md-6 mb-3">
@@ -91,7 +91,6 @@ const RegisterForm = () => {
               label="Landline Phone"
               type="landline"
               name="landline"
-              required
             />
           </div>
           <div className="col-12 col-md-6 mb-3">
