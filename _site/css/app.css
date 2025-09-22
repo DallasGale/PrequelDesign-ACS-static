@@ -171,7 +171,7 @@ ol {
 .card-bg {
   background-color: var(--color-trans-white);
   border-radius: var(--radius-10);
-  padding: var(--space-30);
+  padding: var(--space-16);
 }
 
 .btn-group {
@@ -430,10 +430,17 @@ ol {
 .badge-row {
   display: grid;
   padding: var(--space-20);
-  grid-template-columns: 150px 1fr;
+  gap: var(--space-20);
+  grid-template-columns: var(--space-80) 1fr;
   background-color: var(--color-trans-white);
   border-bottom: 2px solid var(--color-navy);
   width: 100%;
+}
+
+.badge-row__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-40);
 }
 /* ------------------------------------------------- */
 /*  Button */
@@ -484,8 +491,9 @@ ol {
 /* ------------------------------------------------- */
 .primary-btn {
   background-color: var(--color-cyan);
-  padding: var(--space-10) var(--space-40);
+  padding: var(--space-6) var(--space-20);
   color: var(--color-dark-navy);
+  font-size: 14px;
 }
 .primary-btn:hover {
   background-color: var(--color-cyan-hover);
@@ -900,6 +908,10 @@ ol {
     font-weight: 800;
   }
 
+  .primary-btn {
+    padding: var(--space-10) var(--space-40);
+    font-size: 18px;
+  }
   .page-wrapper {
     flex-direction: row;
     gap: var(--space-60);
@@ -909,9 +921,15 @@ ol {
   .sidebar {
     display: block;
   }
-  /* .card__content {
-    padding: var(--space-20) var(--space-20);
-  } */
+
+  .badge-row {
+    display: grid;
+    gap: var(--space-60);
+    grid-template-columns: var(--space-180) 1fr;
+  }
+  .card-bg {
+    padding: var(--space-30);
+  }
 }
 
 /* Breakpoints Extra Large */

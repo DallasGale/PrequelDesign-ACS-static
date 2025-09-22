@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "./layout.11ty"
 import Card from "./_includes/components/card/index.11ty"
+import BadgeRow from "./_includes/components/badgeRow/index.11ty"
 
 const CourseBadges = ({title}) => {
   return (
@@ -11,18 +12,11 @@ const CourseBadges = ({title}) => {
           {/* <p>Please complete a course to earn a certificate.</p> */}
 
           <div className="badge-grid">
-            <div className="badge-row">
-              <img src="../assets/images/badge.png" alt="" width="100%" />
-            </div>
-            <div className="badge-row">
-              <img src="../assets/images/badge.png" alt="" width="100%" />
-            </div>
-            <div className="badge-row">
-              <img src="../assets/images/badge.png" alt="" width="100%" />
-            </div>
-            <div className="badge-row">
-              <img src="../assets/images/badge.png" alt="" width="100%" />
-            </div>
+            <BadgeRow />
+            <BadgeRow />
+            <BadgeRow />
+            <BadgeRow />
+            <BadgeRow />
           </div>
         </div>
       </div>
