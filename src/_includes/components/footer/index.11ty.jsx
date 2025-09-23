@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       Powered By
       <img
-        src="https://acs-staging.entersoft.academy/public/uploads/main/files/29-05-2025/EA-Logo.png"
+        src="../assets/svgs/Entersoft_logo_white.svg"
         alt="ACS"
         className="footer__img"
       />

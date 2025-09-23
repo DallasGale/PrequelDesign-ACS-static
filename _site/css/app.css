@@ -238,6 +238,7 @@ ol {
   max-width: var(--space-232);
   height: auto;
   width: 100%;
+  max-width: var(--space-200);
 }
 /* ------------------------------------------------- */
 /* Sidebar */
