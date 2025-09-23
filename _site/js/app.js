@@ -5,6 +5,9 @@ $(document).ready(function () {
   // Active Menu
   let path = window.location.href
   $(".sidebar a").each(function () {
+    if ($(this).hasClass("no-active-state")) {
+      return // Continue to next iteration
+    }
     let current_url = this.href
 
     if (current_url === path) {
