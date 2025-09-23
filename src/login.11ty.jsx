@@ -4,9 +4,9 @@ import BaseLayout from "./baseLayout.11ty"
 import TextInput from "./_includes/components/textInput/index.11ty"
 import PrimaryButton from "./_includes/components/primaryButton/index.11ty"
 
-const Index = ({title}) => {
+const Index = () => {
   return (
-    <BaseLayout>
+    <BaseLayout isLoggedIn={false}>
       <div className="page-content__sign-in">
         <h1 className="display1">Sign In</h1>
 
@@ -76,8 +76,4 @@ const Index = ({title}) => {
     </BaseLayout>
   )
 }
-
 export default Index
-export const data = {
-  title: "ACS - Entersoft",
-}

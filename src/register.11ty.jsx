@@ -5,7 +5,7 @@ import RegisterForm from "./_includes/components/registerForm/index.11ty"
 
 const Register = ({title}) => {
   return (
-    <BaseLayout>
+    <BaseLayout isLoggedIn={false}>
       <div className="page-content__register">
         <h1 className="display1">
           Register now for the ACS Cyber security micro-credential for educators
