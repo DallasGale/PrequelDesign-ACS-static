@@ -25,7 +25,7 @@ const Sidebar = ({isHeaderMenu}) => {
         })}
         {isHeaderMenu && (
           <li>
-            <a href="/" className="btn sidebar__list-item-link">
+            <a href="/login" className="btn sidebar__list-item-link">
               {/* <img src={item.icon} className="sidebar__list-item-icon" /> */}
               <div className="sidebar__list-item-icon">
                 <img src="../../assets/svgs/logout.svg" />

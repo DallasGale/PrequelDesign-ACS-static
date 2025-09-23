@@ -1,13 +1,20 @@
 import React from "react"
-import PrimaryButton from "../primaryButton/index.11ty"
 import PrimaryLink from "../primaryLink/index.11ty"
 import PrimaryCardButton from "../primaryCardButton/index.11ty"
 
-const Card = ({heading, image}) => {
+const Card = () => {
   return (
     <div href="/student-dashboard" className="card">
       <picture className="card__img-wrapper">
-        <img src={image} width="100%" height="auto" className="card__img" />
+        <img
+          src="/assets/images/entersoft_course-visual.png"
+          width="100%"
+          height="auto"
+          className="card__img"
+        />
+        <div className="card__watermark">
+          <img src="/assets/logo.png" alt="ACS" className="header__img" />
+        </div>
       </picture>
 
       <div className="card__content">
@@ -16,7 +23,9 @@ const Card = ({heading, image}) => {
           <small className="label3 text-dark-navy">1hr</small>
         </div>
         <div className="card__content-title">
-          <h2 className="display3 text-dark-navy">{heading}</h2>
+          <h2 className="display3 text-dark-navy">
+            Cyber security micro-credential for educators
+          </h2>
         </div>
         <div className="card__footer">
           <PrimaryCardButton label="Enrol" />
@@ -31,7 +40,3 @@ const Card = ({heading, image}) => {
 }
 
 export default Card
-export const data = {
-  heading: "Placeholder",
-  image: "/assets/images/CourseTile_ACS.png",
-}
