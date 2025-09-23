@@ -266,9 +266,83 @@ ol {
   display: flex;
   flex-direction: row;
   gap: var(--space-20);
-  padding: var(--space-6) var(--space-10);
+  padding: var(--space-6) var(--space-10) var(--space-6) var(--space-40);
   border-radius: var(--radius-7);
   transition: none;
+  background-repeat: no-repeat !important;
+  background-position: center left 10px !important;
+  background-size: 20px !important;
+}
+
+/* Icons */
+/* Dashboard */
+.sidebar-dashboard-icon {
+  background-image: url("../assets/svgs/dashboard-white.svg");
+}
+.sidebar-dashboard-icon.sidebar__list-item-link--active,
+.sidebar-dashboard-icon:hover {
+  background-image: url("../assets/svgs/dashboard.svg");
+}
+/* My Profile */
+.sidebar-my-profile-icon {
+  background-image: url("../assets/svgs/my-profile-white.svg");
+}
+.sidebar-my-profile-icon.sidebar__list-item-link--active,
+.sidebar-my-profile-icon:hover {
+  background-image: url("../assets/svgs/my-profile.svg");
+}
+
+/* Forum */
+.sidebar-forum-icon {
+  background-image: url("../assets/svgs/forum-white.svg");
+}
+.sidebar-forum-icon.sidebar__list-item-link--active,
+.sidebar-forum-icon:hover {
+  background-image: url("../assets/svgs/forum.svg");
+}
+
+/* Calendar */
+.sidebar-calendar-icon {
+  background-image: url("../assets/svgs/calendar-white.svg");
+}
+.sidebar-calendar-icon.sidebar__list-item-link--active,
+.sidebar-calendar-icon:hover {
+  background-image: url("../assets/svgs/calendar.svg");
+}
+
+/* Badges */
+.sidebar-badges-icon {
+  background-image: url("../assets/svgs/badges-white.svg");
+}
+.sidebar-badges-icon.sidebar__list-item-link--active,
+.sidebar-badges-icon:hover {
+  background-image: url("../assets/svgs/badges.svg");
+}
+
+/* Certificate */
+.sidebar-certificate-icon {
+  background-image: url("../assets/svgs/certificate-white.svg");
+}
+.sidebar-certificate-icon.sidebar__list-item-link--active,
+.sidebar-certificate-icon:hover {
+  background-image: url("../assets/svgs/certificate.svg");
+}
+
+/* Ticket */
+.sidebar-ticket-icon {
+  background-image: url("../assets/svgs/ticket-white.svg");
+}
+.sidebar-ticket-icon.sidebar__list-item-link--active,
+.sidebar-ticket-icon:hover {
+  background-image: url("../assets/svgs/ticket.svg");
+}
+
+/* Logout */
+.sidebar-logout-icon {
+  background-image: url("../assets/svgs/logout-white.svg");
+}
+.sidebar-logout-icon:hover {
+  background-image: url("../assets/svgs/logout.svg");
 }
 
 .sidebar__list-item-link--active,
