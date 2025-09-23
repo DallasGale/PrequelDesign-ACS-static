@@ -8,14 +8,14 @@ const StudentDashboard = () => {
     <Layout>
       <div className="card-bg generic-page">
         <h2 className="display1">Enrolled Courses</h2>
-        <div className="generic-page__content mb-5">
+        <div className="generic-page__content mb-5 card-bg">
           <div className="card-grid">
             <Card heading="Cyber security micro-credential for educators" />
           </div>
         </div>
 
         <h2 className="display1">Browse Courses</h2>
-        <div className="generic-page__content">
+        <div className="generic-page__content card-bg">
           <div className="card-grid">
             <Card />
             <Card />
