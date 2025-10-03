@@ -1,395 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    
-    <title>ACS - Entersoft</title>
-    
-    <!-- Preload Assets -->
-    <link rel="preload" as="image" href="../../assets/logo.png" />
-    <link rel="preload" as="image" href="../../assets/images/badge.png" />
-    <link rel="preload" as="image" href="../../assets/svgs/Entersoft_logo_white.svg" />
-    
-    <!-- Font Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
-    
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    
-    <!-- Bootstrap Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../../css/app.css" />
-    
-    <!-- FullCalendar -->
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.19/index.global.min.js"></script>
-    <script type="module" src="../../js/calendar.js"></script>
-    
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <a href="/login">
-        <img src="../../assets/logo.png" alt="ACS" class="header__img" />
-      </a>
-      
-      <div class="header__menu-wrapper">
-        <button class="header__menu" id="mobile-menu-trigger">
-          <div class="initials">TI</div>
-        </button>
-        
-        <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="mobile-nav">
-          <aside class="sidebar">
-            <ul class="sidebar__list card-bg">
-              <li>
-                <a
-                  href="/student-dashboard/"
-                  class="btn sidebar__list-item-link no-active-state sidebar-dashboard-icon"
-                >
-                  Dashboard
-                </a>
+<div class="card-bg generic-page">
+  <p class="display3">Micro-Credential</p>
+  <h1 class="display1">Cyber security micro-credential for educators</h1>
+  
+  <div class="generic-page__content">
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs ms-0 mb-3 border-0">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#Overview-tab">
+          Overview
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#Curriculum-tab">
+          Modules
+        </a>
+      </li>
+    </ul>
+
+    <div class="course-details__grid">
+      <!-- Tab Content -->
+      <div class="tab-content">
+        <!-- Overview Tab -->
+        <div class="tab-pane active" id="Overview-tab">
+          <div id="Overview" role="tabpanel">
+            <h2 class="display2 mb-3">Description</h2>
+            <p class="body1">
+              ACS has partnered with Entersoft to deliver the Cyber Security
+              Micro-credential for Educators. This micro-credential supports teacher
+              professional development on the privacy and security section of the
+              Australian Digital Technologies Curriculum. The micro-credential consists
+              of 4 modules. Each module will take approximately 1 hour to complete. The
+              course is structured to cover key topics including:
+            </p>
+            <ul class="ul">
+              <li class="body1">
+                recognising cyber threats, understanding multi-factor authentication
+                (MFA) and its role in protecting passwords.
               </li>
-              <li>
-                <a
-                  href="/users/settings/"
-                  class="btn sidebar__list-item-link no-active-state sidebar-my-profile-icon"
-                >
-                  My Profile
-                </a>
+              <li class="body1">
+                safeguarding personal and organisational data.
               </li>
-              <li>
-                <a
-                  href="/forum/"
-                  class="btn sidebar__list-item-link no-active-state sidebar-forum-icon"
-                >
-                  Forum
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/calendar-view/"
-                  class="btn sidebar__list-item-link no-active-state sidebar-calendar-icon"
-                >
-                  Calendar
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/course-badges/"
-                  class="btn sidebar__list-item-link no-active-state sidebar-badges-icon"
-                >
-                  Badges
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/my-certificate/"
-                  class="btn sidebar__list-item-link no-active-state sidebar-certificate-icon"
-                >
-                  Certificate
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/student/support-ticket/"
-                  class="btn sidebar__list-item-link no-active-state sidebar-ticket-icon"
-                >
-                  Ticket
-                </a>
-              </li>
-              <li>
-                <a href="/login" class="btn sidebar__list-item-link sidebar-logout-icon">
-                  Logout
-                </a>
-              </li>
+              <li class="body1">managing digital footprints.</li>
+              <li class="body1">applying Australian Privacy Principles.</li>
             </ul>
-          </aside>
+            <p class="body1">
+              To compliment your professional development, the micro-credential
+              includes a range of teaching resources. These will be available to
+              download upon successful completion of each module. Join our forums to
+              connect and collaborate with other teachers, share ideas, help with
+              classroom implementation and, most importantly, be part of our online
+              community.
+            </p>
+          </div>
         </div>
-      </div>
-    </header>
 
-    <!-- Main Content -->
-    <main class="page-wrapper">
-      <!-- Desktop Sidebar -->
-      <aside class="sidebar">
-        <ul class="sidebar__list card-bg">
-          <li>
-            <a
-              href="/student-dashboard/"
-              class="btn sidebar__list-item-link sidebar-dashboard-icon"
-            >
-              Dashboard
-            </a>
-          </li>
-          <li>
-            <a
-              href="/users/settings/"
-              class="btn sidebar__list-item-link sidebar-my-profile-icon"
-            >
-              My Profile
-            </a>
-          </li>
-          <li>
-            <a
-              href="/forum/"
-              class="btn sidebar__list-item-link sidebar-forum-icon"
-            >
-              Forum
-            </a>
-          </li>
-          <li>
-            <a
-              href="/calendar-view/"
-              class="btn sidebar__list-item-link sidebar-calendar-icon"
-            >
-              Calendar
-            </a>
-          </li>
-          <li>
-            <a
-              href="/course-badges/"
-              class="btn sidebar__list-item-link sidebar-badges-icon"
-            >
-              Badges
-            </a>
-          </li>
-          <li>
-            <a
-              href="/my-certificate/"
-              class="btn sidebar__list-item-link sidebar-certificate-icon"
-            >
-              Certificate
-            </a>
-          </li>
-          <li>
-            <a
-              href="/student/support-ticket/"
-              class="btn sidebar__list-item-link sidebar-ticket-icon"
-            >
-              Ticket
-            </a>
-          </li>
-        </ul>
-      </aside>
-
-      <!-- Page Content -->
-      <section class="page-content">
-        <div class="card-bg generic-page">
-          <p class="display3">Micro-Credential</p>
-          <h1 class="display1">Cyber security micro-credential for educators</h1>
-          
-          <div class="generic-page__content">
-            <!-- Navigation Tabs -->
-            <ul class="nav nav-tabs ms-0 mb-3 border-0">
-              <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#Overview-tab">
-                  Overview
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#Curriculum-tab">
-                  Modules
-                </a>
-              </li>
-            </ul>
-
-            <div class="course-details__grid">
-              <!-- Tab Content -->
-              <div class="tab-content">
-                <!-- Overview Tab -->
-                <div class="tab-pane active" id="Overview-tab">
-                  <div id="Overview" role="tabpanel">
-                    <h2 class="display2 mb-3">Description</h2>
-                    <p class="body1">
-                      ACS has partnered with Entersoft to deliver the Cyber Security
-                      Micro-credential for Educators. This micro-credential supports teacher
-                      professional development on the privacy and security section of the
-                      Australian Digital Technologies Curriculum. The micro-credential consists
-                      of 4 modules. Each module will take approximately 1 hour to complete. The
-                      course is structured to cover key topics including:
+        <!-- Curriculum Tab -->
+        <div class="tab-pane" id="Curriculum-tab">
+          <div id="Curriculum" role="tabpanel">
+            <h2 class="display2 mb-3">Modules</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <!-- Accordion Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white display3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p class="body1 text-white">
+                      Placeholder content for this accordion, which is intended to
+                      demonstrate the <code>.accordion-flush</code> class. This is the
+                      first item's accordion body.
                     </p>
-                    <ul class="ul">
-                      <li class="body1">
-                        recognising cyber threats, understanding multi-factor authentication
-                        (MFA) and its role in protecting passwords.
-                      </li>
-                      <li class="body1">
-                        safeguarding personal and organisational data.
-                      </li>
-                      <li class="body1">managing digital footprints.</li>
-                      <li class="body1">applying Australian Privacy Principles.</li>
-                    </ul>
-                    <p class="body1">
-                      To compliment your professional development, the micro-credential
-                      includes a range of teaching resources. These will be available to
-                      download upon successful completion of each module. Join our forums to
-                      connect and collaborate with other teachers, share ideas, help with
-                      classroom implementation and, most importantly, be part of our online
-                      community.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Curriculum Tab -->
-                <div class="tab-pane" id="Curriculum-tab">
-                  <div id="Curriculum" role="tabpanel">
-                    <h2 class="display2 mb-3">Modules</h2>
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                      <!-- Accordion Item 1 -->
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button
-                            class="accordion-button collapsed text-white display3"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseOne"
-                          >
-                            Accordion Item #1
-                          </button>
-                        </h2>
-                        <div
-                          id="flush-collapseOne"
-                          class="accordion-collapse collapse"
-                          data-bs-parent="#accordionFlushExample"
-                        >
-                          <div class="accordion-body">
-                            <p class="body1 text-white">
-                              Placeholder content for this accordion, which is intended to
-                              demonstrate the <code>.accordion-flush</code> class. This is the
-                              first item's accordion body.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Accordion Item 2 -->
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button
-                            class="accordion-button collapsed text-white display3"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseTwo"
-                          >
-                            Accordion Item #2
-                          </button>
-                        </h2>
-                        <div
-                          id="flush-collapseTwo"
-                          class="accordion-collapse collapse"
-                          data-bs-parent="#accordionFlushExample"
-                        >
-                          <div class="accordion-body">
-                            <p class="body1 text-white">
-                              Placeholder content for this accordion, which is intended to
-                              demonstrate the <code>.accordion-flush</code> class. This is the
-                              second item's accordion body. Let's imagine this being filled
-                              with some actual content.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- Accordion Item 3 -->
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                          <button
-                            class="accordion-button collapsed text-white display3"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseThree"
-                          >
-                            Accordion Item #3
-                          </button>
-                        </h2>
-                        <div
-                          id="flush-collapseThree"
-                          class="accordion-collapse collapse"
-                          data-bs-parent="#accordionFlushExample"
-                        >
-                          <div class="accordion-body">
-                            <p class="body1 text-white">
-                              Placeholder content for this accordion, which is intended to
-                              demonstrate the <code>.accordion-flush</code> class. This is the
-                              third item's accordion body. Nothing more exciting happening
-                              here in terms of content, but just filling up the space to make
-                              it look, at least at first glance, a bit more representative of
-                              how this would look in a real-world application.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
 
-              <!-- Badge Image -->
-              <div>
-                <div class="course-details__badge">
-                  <img src="../../assets/images/badge.png" alt="" width="100%" />
+              <!-- Accordion Item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white display3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p class="body1 text-white">
+                      Placeholder content for this accordion, which is intended to
+                      demonstrate the <code>.accordion-flush</code> class. This is the
+                      second item's accordion body. Let's imagine this being filled
+                      with some actual content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed text-white display3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    <p class="body1 text-white">
+                      Placeholder content for this accordion, which is intended to
+                      demonstrate the <code>.accordion-flush</code> class. This is the
+                      third item's accordion body. Nothing more exciting happening
+                      here in terms of content, but just filling up the space to make
+                      it look, at least at first glance, a bit more representative of
+                      how this would look in a real-world application.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      Powered By
-      <img
-        src="../../assets/svgs/Entersoft_logo_white.svg"
-        alt="ACS"
-        class="footer__img"
-      />
-    </footer>
-
-    <!-- Scripts -->
-    <script type="module" src="../../js/app.js"></script>
-    <script type="module" src="../../js/settings.js"></script>
-    <script type="module" src="../../js/common.js"></script>
-    <script type="module" src="../../js/profilePhoto.js"></script>
-    <script type="module" src="../../js/mobileMenu.js"></script>
-  </body>
-</html>
+      <!-- Badge Image -->
+      <div>
+        <div class="course-details__badge">
+          <img src="../../assets/images/badge.png" alt="" width="100%" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
